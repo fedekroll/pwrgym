@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo{
+    background-image: url(./iconos/logo.svg);
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100px;
+}
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    background: #1a1a1a;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 4;
+}
+
+section{
+    max-width: 1200px;
+    width: 100%;
+}
+
+#barra{
+    width: 100%;
+    height: calc(100vh - 4em);
+    position: absolute;
+    top: 4em;
+    left: -100%;
+    background: #1a1a1a;
+    transition: left .5s ease;
+}
+
+#barra li{
+    list-style: none;
+    margin: 1em;
+    width: 90%;
+    display: inline-block;
+}
+
+#barra li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+#barra li a:hover{
+    background-color: #911d22;
+    color: white;
+    font-weight: 600;
+    border-radius: 40px;
+    transition: 0.2s ease;
+}
+
+/* banner */
+
+#banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-left: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+#banner h2{
+    color: white;
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#banner p{
+    padding-bottom: 1em;
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#unite a{
+    padding: 0.5em;
+    background-color: #911d22;
+    width: 5em;
+    color: black;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+#unite a:hover{
+    color: #911d22;
+    background-color: white;
+    font-weight: 800;
+    transition: 0.2 ease;
+}
+
+/* nosotros */
+
+.noseguirleyendo{
+    display: none;
+}
+
+#contenido2, #contenido3, #contenido4, #contenido6, #contenido7, #contenido8{
+    display: none;
+}
+
+#contenido1:target ~ #contenido2{
+    display: block;
+}
+
+#contenido1:target ~ #contenido3{
+    display: block;
+}
+
+#contenido1:target ~ #contenido4{
+    display: block;
+}
+
+#contenido1:target > #seguirleyendo1{
+    display: none;
+}
+
+#contenido1:target ~ #noseguirleyendo1{
+    display: block;
+}
+
+#contenido5:target ~ #contenido6{
+    display: block;
+}
+
+#contenido5:target ~ #contenido7{
+    display: block;
+}
+
+#contenido5:target ~ #contenido8{
+    display: block;
+}
+
+#contenido5:target > #seguirleyendo2{
+    display: none;
+}
+
+#contenido5:target ~ #noseguirleyendo2{
+    display: block;
+}
+
+#nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+#nosotros div{
+    color: #1a1a1a;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+#nosotros div h2{
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #911d22;
+}
+
+#nosotros div h3{
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#nosotros div h4{
+    font-size: 1.5em;
+    font-weight: 100;
+    font-style: italic;
+    padding-bottom: 1;
+}
+
+#nosotros div p{
+    font-size: 1em;
+    font-weight: 300;
+    padding: 1em 0;
+}
+
+#nosotros a{
+    padding: 1em;
+    text-decoration: none;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+
+#nosotros a img{
+    height: 1em;
+}
+
+#nosotros a:hover img{
+    height: 1.5em;
+    transition: 0.3 ease;
+}
+
+#nosotros article{
+    padding: 2em;
+}
+
+#nosotros figcaption{
+    color: #1a1a1a;
+    font-style: italic;
+    font-weight: 100;
+}
+
+#nosotros figure img{
+    height: auto;
+    width: 100%;
+}
+
+/* deportes */
+
+#deportes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#deportes article{
+    height: 100vh;
+    width: 100%;
+    padding: 2em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#deportes article:hover{
+    filter: brightness(130%);
+}
+
+#deportes figure{
+    width: 3em;
+}
+
+#deportes h2{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#deportes span{
+    color: #911d22;
+    font-weight: 500;
+}
+
+#deportes p{
+    padding-bottom: 1em;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+#deportes a{
+    max-width: 6em;
+    background-color: #911d22;
+    color: white;
+    font-size: .7em;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 400;
+}
+
+#deportes a:hover{
+    color: #911d22;
+    background-color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 7em;
+}
+
+#crossfit{
+    background-image: url(./imagenes/crossfit-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#weightlifting{
+    background-image: url(./imagenes/weightlifting-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#strongman{
+    background-image: url(./imagenes/strongman-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#powerlifting{
+    background-image: url(./imagenes/powerlifting-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* video */
+
+#video{
+    background-color: #1a1a1a;
+}
+
+video{
+    max-width: 100%;
+    height: auto;
+}
+
+/* galeria */
+
+#galeria{
+    background-color: #1a1a1a;
+}
+
+.fotorama__wrap {
+margin: 0 auto;
+}
+
+/* footer */
+
+footer{
+    margin: auto;
+    padding: 2em;
+    height: 50vh;
+    max-width: 1200px;
+    background-color: #1a1a1a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 2em;
+}
+
+footer ul{
+    font-weight: 100;
+    list-style: none;
+}
+
+#logofooter img{
+    display: none;
+}
+
+#informacion{
+    padding: 1em;
+
+}
+
+#redes{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#redes h3{
+    padding-bottom: 2em;
+}
+
+#iconosredes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#iconosredes a img{
+    height: 3em;
+    padding: .2em;
+}
+
+
+/* solo para la barra no usar */
+
+@media screen and (max-width:991px) {
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #hamburguesa li{
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        width: 2.5em;
+    }
+
+    #hamburguesa li a {
+        background: url(./iconos/menu.png) no-repeat center center;
+        background-size: cover;
+        display: block;
+        height: 2.5em;
+    }
+    #hamburguesa li:last-child{
+        display: none;
+    }
+
+    nav:target #barra{
+        left: 0;
+    }
+    
+    nav:target #hamburguesa li:first-child{
+        display: none;
+    }
+    
+    nav:target #hamburguesa li:last-child{
+        display: block;
+    }
+
+}
+
+
+
+/* estilos tablet */
+
+
+
+@media screen and (min-width: 576px) {
+
+#banner{
+    background-image: url(./imagenes/banner-tablet.jpg);
+}
+
+#contenido2, #contenido6{
+    display: block;
+}
+
+#contenido3, #contenido4, #contenido7, #contenido8{
+    display: none;
+}
+
+#contenido1:target ~ #contenido2{
+    display: block;
+}
+
+#contenido1:target ~ #contenido3{
+    display: block;
+}
+
+#contenido1:target ~ #contenido4{
+    display: block;
+}
+
+#contenido1:target > #seguirleyendo1{
+    display: none;
+}
+
+#contenido1:target ~ #noseguirleyendo1{
+    display: block;
+}
+
+#contenido5:target ~ #contenido6{
+    display: block;
+}
+
+#contenido5:target ~ #contenido7{
+    display: block;
+}
+
+#contenido5:target ~ #contenido8{
+    display: block;
+}
+
+#contenido5:target > #seguirleyendo2{
+    display: none;
+}
+
+#contenido5:target ~ #noseguirleyendo2{
+    display: block;
+}
+
+#nosotros article{
+    height: 50%;
+}
+
+#nosotros div{
+    height: 100%;
+    width: 50%;
+}
+
+#nosotros article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#deportes article{
+    height: 50vh;
+    width: 50%;
+}
+
+#deportes h2{
+    font-size: 1.5em;
+}
+
+#deportes p{
+    font-size: 1em;
+}
+
+#powerlifting{
+    background-image: url(./imagenes/powerlifting-tablet.png);
+    background-repeat: no-repeat;
+}
+
+#weightlifting{
+    background-image: url(./imagenes/weightlifting-tablet.png);
+}
+
+#strongman{
+    background-image: url(./imagenes/strongman-tablet.png);
+}
+
+#crossfit{
+    background-image: url(./imagenes/crossfit-tablet.png);
+}
+
+#logofooter img{
+    width: 25vh;
+    display: block;
+}
+
+footer{
+    height: 40vh;
+    padding: 3em;
+}
+
+}
+
+
+
+/* estilos pc */
+
+
+
+@media screen and (min-width:992px) {
+
+#hamburguesa {
+        display: none;
+    }
+
+section {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+h1{
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+#menu{
+        display: inline-block;
+        vertical-align: middle;
+        width: 70%;
+    }
+
+#barra {
+        position: static;
+        height: auto;
+        background: none;
+        text-align: right;
+    }
+
+#barra li {
+        margin: 0;
+        width: 130px;
+        text-align: right;
+    }
+
+#banner{
+    background-image: url(./imagenes/banner-pc.jpg);
+    max-width: 1200px;
+    height: 50vh;
+    }
+
+.seguirleyendo{
+    display: none;
+}
+
+#contenido2, #contenido3, #contenido4, #contenido6, #contenido7, #contenido8{
+    display: block;
+}
+
+#nosotros article{
+    height: 50%;
+    }
+
+#deportes article{
+    height: 75vh;
+    width: 25%;
+}
+
+    #deportes h2{
+    font-size: 1.5em;
+}
+
+#deportes p{
+    font-size: 1em;
+}
+
+#powerlifting{
+    background-image: url(./imagenes/powerlifting-pc.png);
+}
+
+#weightlifting{
+    background-image: url(./imagenes/weightlifting-pc.png);
+}
+
+#strongman{
+    background-image: url(./imagenes/strongman-pc.png);
+}
+
+#crossfit{
+    background-image: url(./imagenes/crossfit-pc.png);
+}
+
+footer{
+    height: 30vh;
+    padding: 3em;
+}
+
+#logofooter img{
+    width: 25vh;
+    display: block;
+}
+
+}
